@@ -9,8 +9,8 @@ const categories = document.querySelectorAll("h2");
 
 for (let i = 0; i <= noc.length; i++) {
   const listit = categories[i].textContent;
-  console.log("products:", listit);
+  console.log("Category:", listit);
 
-  const temp = document.querySelectorAll(".item h2 + ul");
-  console.log(temp[i]);
+  const temp = document.querySelectorAll("h2 + ul");
+  console.log("Elements:", temp[i].children.length);
 }
