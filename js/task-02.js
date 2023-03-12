@@ -15,5 +15,5 @@ for (const ingredient of ingredients) {
   ul.insertAdjacentElement("afterbegin", li);
 }
 
-console.log(ul);
 ul.classList.add("item");
+console.log(ul);
