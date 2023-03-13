@@ -24,3 +24,4 @@ for (const image of images) {
 
 list.style.display = "flex";
 list.style.flexWrap = "wrap";
+list.style.listStyle = "none";
