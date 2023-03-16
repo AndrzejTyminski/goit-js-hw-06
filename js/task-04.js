@@ -8,13 +8,13 @@ let i = 0;
 const clickListenerDec = () => {
   i -= 1;
   counterValue.textContent = i;
-  console.log(i)
+  //console.log(i)
 };
 
 const clickListenerAdd = () => {
   i += 1;
   counterValue.textContent = i;
-  console.log(i)
+  //console.log(i)
 };
 
 dec.addEventListener("click", clickListenerDec);
