@@ -8,7 +8,7 @@ function handleSubmit(event) {
   } = event.currentTarget;
 
   if (email.value === "" || password.value === "") {
-    alert("wszystkie pola powinny zostać wypełnione");
+    alert("Wszystkie pola powinny zostać wypełnione");
   }
 
   console.log(`Email: ${email.value}, Password: ${password.value}`);
