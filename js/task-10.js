@@ -40,3 +40,4 @@ const getInputValue = () => {
 };
 
 createBtn.addEventListener("click", getInputValue);
+
