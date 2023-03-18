@@ -13,10 +13,9 @@ divBox.style.backgroundColor = getRandomHexColor();
 
 const getInputValue = () => {
   let inputVal = document.querySelector("input").value;
-  divBox.insertAdjacentHTML("beforeend", "<br>");
+  
 
   for (let i = 0; i < inputVal; i++) {
-    console.log(i);
     const divEl = document.createElement("div");
     divBox.append(divEl);
 
