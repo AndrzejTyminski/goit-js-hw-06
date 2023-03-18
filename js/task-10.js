@@ -4,9 +4,6 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-let color = getRandomHexColor();
-console.log(color);
-
 const createBtn = document.querySelector("button[data-create]");
 const divBox = document.querySelector("#boxes");
 divBox.style.width = "30px";
@@ -21,7 +18,8 @@ const getInputValue = () => {
     const divEl = document.createElement("div");
     divBox.append(divEl);
 
-    //divEl.setAttribute("style", "height:" + i * 10 + "px");
+    let color = getRandomHexColor();
+
     divEl.setAttribute(
       "style",
       "width: " +
@@ -30,8 +28,9 @@ const getInputValue = () => {
         " height: " +
         i * 10 +
         "px;" +
-        " background-color: red;" +
-        " margin: " +
+        " background-color: " +
+        color +
+        "; margin: " +
         5 +
         "px"
     );
@@ -40,4 +39,3 @@ const getInputValue = () => {
 };
 
 createBtn.addEventListener("click", getInputValue);
-
