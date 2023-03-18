@@ -13,7 +13,7 @@ divBox.style.backgroundColor = getRandomHexColor();
 
 const getInputValue = () => {
   let inputVal = document.querySelector("input").value;
-  divBox.insertAdjacentHTML("afterbegin", "<br> <br>");
+  divBox.insertAdjacentHTML("beforeend", "<br>");
 
   for (let i = 0; i < inputVal; i++) {
     console.log(i);
@@ -37,5 +37,9 @@ const getInputValue = () => {
   }
 };
 
+const removeAct = () => {
+  divBox.remove();
+};
+
 createBtn.addEventListener("click", getInputValue);
-destroyBtn.addEventListener("click");
+destroyBtn.addEventListener("click", removeAct);
