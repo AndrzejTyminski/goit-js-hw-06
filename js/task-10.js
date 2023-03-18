@@ -22,11 +22,11 @@ const getInputValue = () => {
 
     divEl.setAttribute(
       "style",
-      "width:  " +
-        (30 + i * 10) +
+      "width: " +
+        (40 + i * 10) +
         "px;" +
-        " height:  " +
-        (30 + i * 10) +
+        " height: " +
+        (40 + i * 10) +
         "px;" +
         " background-color: " +
         getRandomHexColor() +
