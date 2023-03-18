@@ -9,11 +9,9 @@ const destroyBtn = document.querySelector("button[data-destroy]");
 const divBox = document.querySelector("#boxes");
 divBox.style.width = "30px";
 divBox.style.height = "30px";
-divBox.style.backgroundColor = getRandomHexColor();
 
 const getInputValue = () => {
   let inputVal = document.querySelector("input").value;
-  
 
   for (let i = 0; i < inputVal; i++) {
     const divEl = document.createElement("div");
