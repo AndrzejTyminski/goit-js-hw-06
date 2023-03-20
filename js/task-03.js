@@ -14,14 +14,14 @@ const images = [
 ];
 
 const list = document.querySelector(".gallery");
-//console.log(list);
+
 
 for (const image of images) {
-  const url = `<li ><img style="width: 90vw;" src="${image.url}" alt="${image.alt}"></li>`;
+  const url = `<li ><img  src="${image.url}" alt="${image.alt}"></li>`;
   list.insertAdjacentHTML("afterbegin", url);
-  //console.log(list);
+
 }
 
-list.style.display = "flex";
-list.style.flexWrap = "wrap";
-list.style.listStyle = "none";
+// list.style.display = "flex";
+// list.style.flexWrap = "wrap";
+// list.style.listStyle = "none";
