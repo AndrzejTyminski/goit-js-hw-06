@@ -13,9 +13,7 @@ let size = 20;
 firstdiv.style.backgroundColor = getRandomHexColor();
 
 const getInputValue = () => {
-  let inputVal = document.querySelector("input").value;
-
-  for (let i = 0; i < inputVal; i++) {
+  for (let i = 0; i < document.querySelector("input").value; i++) {
     const divEl = document.createElement("div");
     divBox.append(divEl);
     divEl.setAttribute(
