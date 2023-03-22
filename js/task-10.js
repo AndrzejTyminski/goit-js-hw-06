@@ -19,7 +19,7 @@ const getInputValue = () => {
     divEl.setAttribute(
       "style",
       "width: " +
-        (size = size + 10) +
+        (size += 10) +
         "px;" +
         " height: " +
         size +
