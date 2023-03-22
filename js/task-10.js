@@ -6,12 +6,10 @@ function getRandomHexColor() {
 const createBtn = document.querySelector("button[data-create]");
 const destroyBtn = document.querySelector("button[data-destroy]");
 const divBox = document.querySelector("#boxes");
-
 const firstdiv = document.createElement("div");
-//divBox.append(firstdiv);
-const size = 30;
-//firstdiv.style.width = size + "px";
-//firstdiv.style.height = size + "px";
+
+let size = 20;
+
 firstdiv.style.backgroundColor = getRandomHexColor();
 
 const getInputValue = () => {
@@ -23,10 +21,10 @@ const getInputValue = () => {
     divEl.setAttribute(
       "style",
       "width: " +
-        (size + i * 10) +
+        (size = size + 10) +
         "px;" +
         " height: " +
-        (size + i * 10) +
+        size +
         "px;" +
         " background-color: " +
         getRandomHexColor()
@@ -38,6 +36,7 @@ const removeAct = () => {
   const list = document.getElementById("boxes");
   while (list.hasChildNodes()) {
     list.removeChild(list.firstChild);
+    size = 20;
   }
 };
 
