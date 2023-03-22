@@ -32,11 +32,17 @@ const getInputValue = () => {
 
 const removeAct = () => {
   const list = document.getElementById("boxes");
-  while (list.hasChildNodes()) {
-    list.removeChild(list.firstChild);
+  const input = document.querySelector('input[type="number"]');
+  // while (list.hasChildNodes()) {
+  //   list.removeChild(list.firstChild);
+  list.innerHTML = '';
     size = 20;
+    input.value = '';
   }
-};
+
+
 
 createBtn.addEventListener("click", getInputValue);
 destroyBtn.addEventListener("click", removeAct);
+
+
