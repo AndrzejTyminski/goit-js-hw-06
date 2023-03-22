@@ -8,9 +8,10 @@ const destroyBtn = document.querySelector("button[data-destroy]");
 const divBox = document.querySelector("#boxes");
 
 const firstdiv = document.createElement("div");
-divBox.append(firstdiv);
-firstdiv.style.width = "30px";
-firstdiv.style.height = "30px";
+//divBox.append(firstdiv);
+const size = 30;
+//firstdiv.style.width = size + "px";
+//firstdiv.style.height = size + "px";
 firstdiv.style.backgroundColor = getRandomHexColor();
 
 const getInputValue = () => {
@@ -22,10 +23,10 @@ const getInputValue = () => {
     divEl.setAttribute(
       "style",
       "width: " +
-        (40 + i * 10) +
+        (size + i * 10) +
         "px;" +
         " height: " +
-        (40 + i * 10) +
+        (size + i * 10) +
         "px;" +
         " background-color: " +
         getRandomHexColor()
